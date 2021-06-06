@@ -9,6 +9,11 @@ git:
   depth: 3
 script:
   - yarn build
+notifications:
+  email:
+    - pcaa3000@gmail.com
+  on_success: always
+  on_failure: always
 deploy:
   provider: pages
   skip_cleanup: true
